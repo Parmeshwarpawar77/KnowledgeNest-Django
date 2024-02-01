@@ -1,0 +1,13 @@
+  company_name = models.CharField(max_length=50)
+    company_details = models.CharField(max_length=100)
+    job_post = models.CharField(max_length=70)
+    job_location = models.CharField(max_length=50)
+    job_nature = models.CharField(max_length=15 , choices=JOB_TYPE)
+    job_salary = models.IntegerField(default=1)
+    job_published = models.DateTimeField(auto_now=True)
+    job_dateline = models.DateTimeField(auto_now=False, auto_now_add=False)
+    job_desc = models.CharField(max_length=250)
+    job_responsibility = models.CharField(max_length=400)
+    job_qualification = models.CharField(max_length=400)
+    job_vacancy = models.IntegerField(default=1)
+    user
